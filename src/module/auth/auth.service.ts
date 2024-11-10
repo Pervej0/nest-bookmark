@@ -55,10 +55,10 @@ export class AuthService {
   }
 
   signInToken(userId: number, email: string) {
-    const secretKey = this.config.get('JWT_SECRET_KEY');
+    const secretKey = this.config.get('JWT_SECRET');
     const payload = { userId, email };
     const token = this.jwt.sign(payload, {
-      expiresIn: '15m',
+      expiresIn: '2d',
       secret: secretKey,
     });
 
