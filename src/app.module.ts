@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { UserModule } from './user/user.module';
-import { AuthModule } from './auth/auth.module';
-import { BookmarkModule } from './bookmark/bookmark.module';
+import { UserModule } from './module/user/user.module';
+import { AuthModule } from './module/auth/auth.module';
+import { BookmarkModule } from './module/bookmark/bookmark.module';
 import { PrismadbService } from './prismadb/prismadb.service';
 import { ConfigService } from '@nestjs/config';
 import { PrismadbModule } from './prismadb/prismadb.module';
